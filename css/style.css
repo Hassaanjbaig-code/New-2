@@ -4,6 +4,8 @@
     font-family: Poppins, sans-serif;
     font-weight: 800;
     box-sizing: inherit;
+    text-decoration: none;
+    text-align: center;
 }
 #navbar{
     background-color: #be3144;
@@ -20,6 +22,7 @@ ul {
 }
 li{
     padding: 9px 9px 0 0;
+    cursor: pointer;
 }
 #Welcome-section {
     height: 100vh;
@@ -43,23 +46,118 @@ h1{
 #project{
     background-color: #45567d;
 }
+.project-section{
+    display: block;
+}
 #project{
     padding: 9rem 2rem;
 }
 .Project-h1{
         text-align: center;
         font-size: 3.2rem;
-        margin: 0 auto 6rem auto
+        margin: 0 auto 6rem auto;
+        border-bottom: 3px solid black;
 }
 .project-grid{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    grid-gap: 4rem;
+    grid-gap: 9rem;
     width: 100%;
     margin: 0 auto;
     max-width: 1280px;
     margin-bottom: 6rem;
+    z-index: 1;
+}
+.card-1{
+    width: 29rem;
 }
 .Box{
-    height: calc(100%-12vh);
+    height: 50px;
+}
+img{
+    width: 100%;
+    height: calc(100% - 6.8rem);
+    object-fit: cover;
+}
+.Project-p{
+    padding: 0.5rem 0.5rem;
+    font-size: 2rem;
+    color: #f0f0f0;
+    cursor: pointer;
+    text-align: center;
+    background-color: darkslategray;
+}
+.btnshow{
+    list-style: none;
+    background-color: #303841;
+    display: inline-block;
+    padding: 6px 14px 7px 13px;
+}
+.btn{
+    font: bold 11px Arial;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: white;
+}
+.btn:hover{
+    background-color: #be3144;
+    padding: 6px 14px 7px 13px;
+}
+#contact{
+    background-color: #303841;
+    height: 80vh;
+    display: block;
+    color: #f0f0f0;
+    font-family: 'Raleway', sans-serif;
+    position: relative;
+    top: 50%;
+}
+.contact-section-header h2{
+  
+   font-size: 6rem;
+}
+.contact-section-header p{
+    font-size: 1.8rem;
+    font-style: italic;
+}
+@media only screen and (max-width: 1117px){
+    .project-grid{
+        grid-gap: 3rem;
+    }
+    #Welcome-section{
+        height: 90vh;
+    }
+}
+@media only screen and (max-width: 900px){
+    .card-1{
+        width: 25rem;
+    }
+}
+@media only screen and (max-width: 524px){
+    #project{
+        padding: 0;
+    }
+    #Welcome-section{
+        height: 60vh;
+    }
+}
+@media only screen and (max-width: 485px){
+    #Welcome-section{
+        height: 50vh;
+    }
+    h1{
+        margin-top: 20vh;
+    }
+    #Project{
+        padding: 8rem 2rem;
+    }
+    .Project-h1{
+        font-size: 1.3rem;
+    }
+    .Project-p{
+        font-size: 1.1rem;
+    }
+    .card-1{
+        width: 20rem;
+    }
 }
