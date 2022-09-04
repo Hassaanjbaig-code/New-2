@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Poppins, sans-serif;
+    font-weight: 800;
+    box-sizing: inherit;
+}
+#navbar{
+    background-color: #be3144;
+    width: 100%;
+    position: fixed;
+
+}
+ul {
+    list-style: none;
+    display: flex;
+    height: 60px;
+    font-size: 1.4rem;
+    justify-content: end;
+}
+li{
+    padding: 9px 9px 0 0;
+}
+#Welcome-section {
+    height: 100vh;
+    flex-direction: column;
+    display: flex;
+    background-color: #000;
+    background: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+    color: white;
+}
+h1{
+        margin-top: 40vh;
+        font-size: 2rem;
+        font-weight: 800;
+        text-align: center;
+}
+.Welecom-p{
+    text-align: center;
+    font-size: 1.8rem;
+    color: #be3144;
+}
+#project{
+    background-color: #45567d;
+}
+#project{
+    padding: 9rem 2rem;
+}
+.Project-h1{
+        text-align: center;
+        font-size: 3.2rem;
+        margin: 0 auto 6rem auto
+}
+.project-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1280px;
+    margin-bottom: 6rem;
+}
+.Box{
+    height: calc(100%-12vh);
+}
